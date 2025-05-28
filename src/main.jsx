@@ -5,12 +5,18 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Home from "./pages/Home";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+	[
+		{
+			path: "/",
+			element: <Home />,
+			errorElement: <p>Error!</p>,
+		},
+	],
 	{
-		path: "/",
-		element: <Home></Home>,
-	},
-]);
+		basename: "/react-tailwind-theme-dark-light-toggle",
+	}
+);
 
 createRoot(document.getElementById("root")).render(
 	<StrictMode>

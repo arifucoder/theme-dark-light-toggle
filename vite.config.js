@@ -4,6 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-	plugins: [react(), tailwindcss()],
 	base: "/react-tailwind-theme-dark-light-toggle/",
+	plugins: [react(), tailwindcss()],
 });
